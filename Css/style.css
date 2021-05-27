@@ -161,3 +161,119 @@ footer {
   transform: translate(50%, 0);
   bottom: 2px;
 }
+
+.container-form {
+  display: flex;
+  background-image: -webkit-linear-gradient(92deg, #4c00ff, #ff00aa);
+  animation: hue 10s infinite linear;
+
+  justify-content: center;
+  align-items: center;
+}
+.frame_form {
+  max-height: 600px;
+  max-width: 500px;
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 65px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form_h2 {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(138, 138, 138);
+  font-family: sans-serif;
+  /* text-shadow: 3px 4px 5px #808080; */
+  text-transform: uppercase;
+  color: white;
+  background-image: -webkit-linear-gradient(92deg, #4c00ff, #ff00aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+.form-signin {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  color: rgba(94, 94, 94, 0.7);
+  display: block;
+  font-family: sans-serif;
+}
+.btn-signin {
+  float: left;
+  padding-top: 8px;
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  margin-top: -8px;
+}
+
+.btn-animate {
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 23px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 8px;
+  width: 100%;
+  font-family: sans-serif;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 23px;
+  background-color: rgba(16, 89, 255, 1);
+  left: 0px;
+  top: 0px;
+  transition: all 0.5s ease, top 0.5s ease 0.5s, height 0.5s ease 0.5s,
+    background-color 0.5s ease 0.75s;
+}
+
+.btn-animate-grow {
+  width: 130%;
+  height: 625px;
+  position: relative;
+  left: -55px;
+  top: -420px;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+a.btn-signup:hover,
+a.btn-signin:hover {
+  cursor: pointer;
+  background-color: #0f4fe6;
+  transition: background-color 0.5s;
+}
+
+.form-styling {
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: rgb(241, 238, 238);
+}
+.form-styling:focus {
+  outline: 0 none;
+  background: rgb(230, 227, 227);
+}
