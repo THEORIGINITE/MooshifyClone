@@ -7,7 +7,7 @@ nav {
   z-index: 100;
   position: sticky;
   border-bottom: 1px solid #808080;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0);
   backdrop-filter: blur(20px);
   top: 0;
   display: flex;
@@ -24,17 +24,19 @@ nav .navigation {
   display: flex;
   align-items: center;
 }
-nav .navigation > li {
+nav .navigation > li a {
   list-style: none;
   padding: 0.5rem 1.5rem;
   color: #d2d0db;
   transition: color 0.3s;
   font-size: 17px;
+  text-decoration: none;
   font-family: sans-serif;
   cursor: pointer;
 }
-nav .navigation > li:hover {
+nav .navigation > li a:hover {
   color: white;
+  text-decoration: gray;
 }
 section {
   padding: 40px;
@@ -50,7 +52,6 @@ section {
 .container-a {
   height: max-content;
   background: black;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -69,6 +70,12 @@ section {
   padding: 20px;
   font-family: sans-serif;
   color: white;
+  background-image: -webkit-linear-gradient(92deg, #4c00ff, #ff00aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+.gradienttext {
   background-image: -webkit-linear-gradient(92deg, #4c00ff, #ff00aa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -113,6 +120,9 @@ section {
 .illus > img {
   filter: grayscale(100%);
   opacity: 0.2;
+}
+.section-b {
+  top: 199px;
 }
 .languages {
   display: grid;
