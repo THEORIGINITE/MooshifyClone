@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Gsap Animation</title>
 	<link rel="stylesheet" href="Css/style2.css">
+	<link rel="stylesheet" href="Css/style.css">
+
 </head>
 <style>
 	*{
@@ -173,8 +175,18 @@
 		</div>
 	</div>
 	<section data-aos="slide-up">
-		<h1 class="info__p" data-aos="fade-up">contact:theoriginite@gmail.com <br> created by Raj Prasad</h1>
+		
+		<p class="info__p textcenter" data-aos="fade-up"   style="z-index: 1100;">CreatedBy</p>
+
+		<h1 class="info__h1 textcenter" data-aos="slide-up" >Raj Prasad</h1>
+		<p class="info__p  textcenter" data-aos="fade-up">drag mouse to see effect</p>
+		<li class="nav-item info__p textcenter"><a href="https://theoriginite.github.io/MooshifyClone/index.html">go back</a></li>
+		
 	  </section>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		document.body.addEventListener("mousemove" ,e =>{
@@ -185,6 +197,9 @@
 				duration:1,x:e.clientX,y:e.clientY,stagger:0.03
 			} ) 
 		})
+	</script>
+	<script>
+	  AOS.init();
 	</script>
 </body>
 </html>
